@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <div id="input-heading" class="border">
+            <h1>Enter Movie Title:</h1>
+            <form autocomplete="on">
+                <input type="text" name="searchField" id="searchField"></br>
+                <button id="searchBtn" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="border"><img id="poster" src="" alt=""></div>
+        <div id="output-plot" class="border"><p class="sub-title">Plot: <span id="plot"></span></p></div>
+        <div class="border"><p class="sub-title">IMDB Rating: <span id="rating"></span> /10</p></div>
+        <div class="border"><p class="sub-title">Length: <span id="length"></span></p></div>
+        <div id="output-actors" class="border"><p class="sub-title">Actors: <span id="actors"></span></p></div>
+        <div class="border"><p class="sub-title">Genre: <span id="genre"></span></p></div>
+        <div id="other-recommendations" class="border"><p class="sub-title">Other Recommendations:</p></div>
+        <div class="sub-grid">
+            <div class="border">
+                <h5 id="recommendation1-title" class="sub-title"></h5>
+                <img id="recommendation1-poster" src="" alt="">
+                <p id="recommendation1-plot"></p>
+            </div>
+            <div class="border">
+                <h5 id="recommendation2-title" class="sub-title"></h5>
+                <img id="recommendation2-poster" src="" alt="">
+                <p id="recommendation2-plot"></p>
+            </div>
+            <div class="border">
+                <h5 id="recommendation3-title" class="sub-title"></h5>
+                <img id="recommendation3-poster" src="" alt="">
+                <p id="recommendation3-plot"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="keys.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
