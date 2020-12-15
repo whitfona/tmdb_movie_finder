@@ -7,7 +7,7 @@ document.getElementById("searchBtn").addEventListener('click', (e)=> {
 });
 
 function getMovies(movieTitle) {
-    fetch('http://www.omdbapi.com/?i=tt3896198&apikey=' + config.omdbApiKey + '&t=' + movieTitle)
+    fetch('https://www.omdbapi.com/?i=tt3896198&apikey=' + config.omdbApiKey + '&t=' + movieTitle)
         .then((response) => {
             return response.json();
         })
@@ -35,7 +35,7 @@ function getMovies(movieTitle) {
         .catch((err) => {
             console.log(err);
         });
-    fetch('http://www.omdbapi.com/?i=tt3896198&apikey=' + config.omdbApiKey + '&t=' + movieTitle)
+    fetch('https://www.omdbapi.com/?i=tt3896198&apikey=' + config.omdbApiKey + '&t=' + movieTitle)
         .then((response) => {
             return response.json();
         })
